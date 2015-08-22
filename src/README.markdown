@@ -54,3 +54,31 @@ end Rec }
 They're exactly the same! I don't know how is this possible.
 
 Benchmarks:
+
+```
+benchmarking Generic/NFData
+time                 11.25 ms   (11.23 ms .. 11.28 ms)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 11.26 ms   (11.24 ms .. 11.28 ms)
+std dev              46.53 μs   (38.71 μs .. 60.39 μs)
+
+benchmarking Generic/Binary
+time                 694.7 ms   (658.2 ms .. 733.2 ms)
+                     0.999 R²   (0.999 R² .. 1.000 R²)
+mean                 695.5 ms   (688.1 ms .. 699.7 ms)
+std dev              6.578 ms   (0.0 s .. 7.175 ms)
+variance introduced by outliers: 19% (moderately inflated)
+
+benchmarking Hand-written/NFData
+time                 11.09 ms   (11.08 ms .. 11.12 ms)
+                     1.000 R²   (1.000 R² .. 1.000 R²)
+mean                 11.08 ms   (11.06 ms .. 11.10 ms)
+std dev              43.16 μs   (36.18 μs .. 51.54 μs)
+
+benchmarking Hand-written/Binary
+time                 435.7 ms   (423.4 ms .. 460.8 ms)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 438.0 ms   (433.8 ms .. 441.0 ms)
+std dev              4.591 ms   (0.0 s .. 5.250 ms)
+variance introduced by outliers: 19% (moderately inflated)
+```
